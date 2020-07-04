@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Магазин мороженого "Gllacy Shop"</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+	<link href="css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 
@@ -17,9 +20,18 @@
 				<li><a href="#">О Компании</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="user-navigation-item item-search"><a href="#"></a></li>
-				<li class="user-navigation-item item-login"><a href="#">Вход</a></li>
-				<li class="user-navigation-item item-cart"><a href="#">Пусто</a></li>
+				<li class="user-navigation-item item-search">
+					<button class="user-nav-button button-search">Поиск по сайту</button>
+					<form class="site-search-form" class="site-search" method="get" action="https://echo.htmlacademy.ru">
+						<h3 class="visually-hidden">Поиск по сайту</h3>
+						<label for="site-search-text">
+							<input type="text" id="site-search-text" placeholder="Что ищем?">
+						</label>
+						<button type="submit" class="button visually-hidden">Искать</button>
+					</form>
+				</li>
+				<li class="user-navigation-item item-login"><a class="user-nav-button" href="#">Вход</a></li>
+				<li class="user-navigation-item item-cart"><a class="user-nav-button" href="#">Пусто</a></li>
 			</ul>
 		</nav>
 		<p class="main-header-timetable">
@@ -27,11 +39,11 @@
 			<b>8 812 450-25-25</b>
 		</p>
 
-		<section class="header-slider-box">
+		<section class="main-slider-box">
 			<h2 class="visually-hidden">Горячие предложения</h2>
 
-			<ul class="header-slider">
-				<li class="slider-item">
+			<ul class="main-slider">
+				<li class="slider-item active">
 					<h3>Крем-брюле и пломбир с малиновым джемом</h3>
 					<img class="slider-pic" src="img/slide1.png">
 					<button class="button" type="submit">Давайте оба!</button>
@@ -48,17 +60,11 @@
 				</li>
 			</ul>
 
-			<ul class="header-slider-navigation">
-				<li class="slider-nav-item">
-					<a href="#">1</a>
-				</li>
-				<li class="slider-nav-item">
-					<a href="#">2</a>
-				</li>
-				<li class="slider-nav-item">
-					<a href="#">3</a>
-				</li>
-			</ul>
+			<ul class="main-slider-navigation">
+				<li><button class="slider-button current" type="button">1</button></li>
+				<li><button class="slider-button" type="button">2</button></li>
+				<li><button class="slider-button" type="button">3</button></li>
+			</div>
 		</section>
 	</header>
 
@@ -66,20 +72,20 @@
 
 		<h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
 		
-		<section class="main-promotion">
-			<article class="promotion-item">
+		<section class="main-promotions">
+			<article class="promotion-item promotion-item1">
 				<h2>Малинка даром!</h2>
 				<p class="promotion-desc">
 					При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-					<img src="img/content-raspberry.jpg" width="560" height="229">
+					<!--img src="img/content-raspberry.jpg" width="560" height="229"-->
 				</p>
 				<a href="#" class="button">Хочу варенье!</a>
 			</article>
-			<article class="promotion-item">
+			<article class="promotion-item promotion-item2">
 				<h2>Шоколадки даром!</h2>
 				<p class="promotion-desc">
 					При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-					<img src="img/content-chocolate.jpg" width="560" height="229">
+					<!--img src="img/content-chocolate.jpg" width="560" height="229"-->
 				</p>
 				<a href="#" class="button">Хочу шоколадки!</a>
 			</article>
@@ -148,8 +154,7 @@
 		</section>
 
 		<section class="features">
-			<h2 class="visually-hidden">Преимущества</h2>
-			<p class="features-desc">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+			<h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
 
 			<ul class="features-list">
 				<li class="feature-item">
@@ -172,20 +177,23 @@
 		</section>
 
 		<article class="blogpost-article">
-			<h2 class="blogpost-caption">Новое в нашем блоге</h2>
-			<h3 class="blogpost-name"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
-			<img class="blogpost-picture" src="img/content-strawberry.jpg" alt="10 способов сервировки фруктовых щербетов к столу" >
+			<p class="blogpost-caption">Новое в нашем блоге</p>
+			<h2 class="blogpost-name"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2>
 		</article>
 
 		<section class="subscribe">
 			<h2 class="visually-hidden">Подписка на рассылку</h2>
 			<p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-			<form class="subscribe-form" action=""></form>
+			<form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+				<label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+				<input class="subsctibe-email" type="email" id="subscribe-email" name="subscribe-email" placeholder="Электронная почта">
+				<button type="submit" class="button">Отправить</button>
+			</form>
 		</section>
 
 		<section class="contacts">
 			<h2 class="visually-hidden">Контактная информация</h2>
-			<img class="contacts-map" src="img/contacts-map.jpg" /></img>
+			<img src="img/contacts-map.jpg" width="1200" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 			<div class="contact-details">
 				<p>
 					<span>Адрес главного офиса и офлайн-магазина:</span>
@@ -200,7 +208,6 @@
 					<a href="contacts.html" class="button">Форма обратной связи</a>
 				</p>
 			</div>
-			<div class="show-map"></div>
 		</section>
 
 	</main>
@@ -225,10 +232,52 @@
 		</nav>
 
 		<p class="footer-copyright">
-			<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy-small.svg" width="110" height="40"></a>
+			<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="110" height="40"></a>
 			<span calss="copyright-info">Сделано в <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> (с) 2017<span>
 		</p>
     </footer>  
+
+	<section class="modal modal-login" style="display:none;">
+      
+      <h2 class="visually-hidden">Вход в личный кабинет</h2>
+
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Электронная почта</label>
+          <input class="login-icon-user" id="user-login" type="email" name="login" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <a class="newmember" href="#">Забыли пароль?</a>
+          <a class="restore" href="#">Новая регистрация</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+	<section class="modal modal-login">
+		<h2 class="visually-hidden">Форма обратной связи</h2>
+		<p class="modal-caption">Мы обязательно вамо ответим!</p>	
+
+    	<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+			
+			<p class="feedback-item">
+				<input id="feedback-name" type="text" name="date" value="" placeholder="Как вас зовут?">
+			</p>
+			<p class="feedback-item">
+				<input id="feedback-email" type="email" name="email" value="" placeholder="Ваша почта для ответа?">
+			</p>
+			<p class="feedback-item">
+				<textarea placeholder="Напишите что-нибудь..."></textarea>
+			</p>
+			<button class="button" type="submit">Отправить</button>				
+		</form> 
+		<button class="modal-close" type="button">Закрыть</button> 
+	</section>
 
 </body>
 </html>
