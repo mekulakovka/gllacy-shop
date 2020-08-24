@@ -874,7 +874,27 @@ li.cart-not-empty:hover .button-cart {
 	overflow: hidden;
 }
 
+.contacts-static-map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	margin: 0;
+}
+
+.contacts iframe {
+	position: relative;
+	z-index: 2;
+
+	border: none;
+}
+
 .contact-details {
+	position: absolute;
+	right: 25px;
+	top: 60px;
+
 	font-size: 14px;
 	line-height: 20px;
 	color: #000000;
@@ -886,9 +906,7 @@ li.cart-not-empty:hover .button-cart {
 	box-sizing: border-box;	
 	border-radius: 15px;
 
-	position: absolute;
-	right: 25px;
-	top: 60px;
+	z-index: 5;
 }
 
 .contact-details p{
@@ -1272,6 +1290,18 @@ td.cart-calc .price {
 	background-color: rgba(0,0,0,0.3);
 
 	z-index: 100;
+}
+
+.modal-visible {
+	display: block;
+}
+
+.modal-visible .modal {
+	animation: bounce 0.6s;
+}
+
+.modal-error .modal {
+	animation: shake 0.6s;
 }
 
 .modal {
@@ -1893,4 +1923,45 @@ top: 9px;
 
 .big-heading::after {
   margin-left: 25px;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

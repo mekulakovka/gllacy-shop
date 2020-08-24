@@ -271,7 +271,13 @@
 
 				<section class="contacts">
 					<h2 class="visually-hidden">Контактная информация</h2>
-					<img src="img/contacts-map.jpg" width="1200" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2seg!4v1598271406138!5m2!1sen!2seg" width="1200" height="615" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+					<p class="contacts-static-map">
+						<img src="img/contacts-map.jpg" width="1200" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+					</p>
+
 					<div class="contact-details">
 						<p>
 							<span>Адрес главного офиса<br> и офлайн-магазина:</span>
@@ -282,7 +288,7 @@
 							<b>8 812 450-25-25</b>
 							<span>(с 10 до 20 ежедневно)</span>
 						</p>
-						<a href="contacts.html" class="button">Форма обратной связи</a>
+						<a href="contacts.html" class="button feedback-link">Форма обратной связи</a>
 					</div>
 				</section>
 
@@ -347,7 +353,7 @@
 	    	<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 				
 				<p class="feedback-item">
-					<input id="feedback-name" type="text" name="date" value="" placeholder="Как вас зовут?">
+					<input id="feedback-name" type="text" name="name" value="" placeholder="Как вас зовут?">
 				</p>
 				<p class="feedback-item">
 					<input id="feedback-email" type="email" name="email" value="" placeholder="Ваша почта для ответа?">
@@ -364,6 +370,7 @@
 		</div>
 	</section>
 
+	<script type="text/javascript" src="js/popup.js"></script>
 	
 </body>
 </html>
