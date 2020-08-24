@@ -1,6 +1,6 @@
 # Личный проект «Глейси»
 
-* Студент: [Юлия Турская](hhttps://htmlacademy.ru/profile/id647355).
+* Студент: [Юлия Турская](https://htmlacademy.ru/profile/id647355).
 * Наставник: [Евгений Котов](https://htmlacademy.ru/profile/id25083).
 
 ---
