@@ -20,7 +20,8 @@
 - модальное окно "Форма обратной связи" (раздел с картой)
 - Базовая валидация формы
 
-Ширина макета статичная - 1200px.
+
+### Ширина макета статичная - 1200px.
 
 ---
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github.svg"></a>
