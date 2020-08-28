@@ -1,5 +1,5 @@
 body {
-	min-width: 900px;
+	min-width: 1200px;
 
 	margin:0;
 	padding:0;
@@ -16,10 +16,10 @@ a {
 }
 
 a:hover,
-a:focus,
 a:active {
 	color: #ffbc9e;
 }
+
 
 img {
 	max-width: 100%;
@@ -255,6 +255,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
 	padding-left: 1px;
+	min-width: 154px;
 }
 
 .site-navigation {
@@ -512,6 +513,8 @@ li.cart-not-empty:hover .button-cart {
 .index-columns {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
+
 	margin-bottom: 40px;
 }
 
@@ -519,23 +522,26 @@ li.cart-not-empty:hover .button-cart {
 
 .promotion-item {
 	background-position: 0 0;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
+	background-size: auto;
 
 	box-sizing: border-box;
 	border-radius: 15px;
 
 	width: 560px;
-	height: 229px;
+	min-height: 229px;
 
-	padding: 17px 19px;
+	padding: 17px 19px 90px 19px;
 	position: relative;
 }
 
 .promotion-item1 {
 	background-image: url(../img/content-raspberry.jpg);
+	background-color: #641c27;
 }
 .promotion-item2 {
 	background-image: url(../img/content-chocolate.jpg);
+	background-color: #47250f;
 }
 
 .promotion-item h2{
@@ -549,7 +555,7 @@ li.cart-not-empty:hover .button-cart {
 	font-size: 18px;
 	line-height: 22px;
 
-	margin: 0 0 30px 0;
+	margin: 0;
 	padding: 0;
 }
 
@@ -572,6 +578,7 @@ li.cart-not-empty:hover .button-cart {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 .catalog-item {
@@ -583,20 +590,35 @@ li.cart-not-empty:hover .button-cart {
 	flex-direction: column;
 }
 
-.catalog-item::before {
+.catalog-item:hover {
+	z-index: 100;
+}
+
+
+.catalog-item .item-hoverbox {
 	display: none;
-	content: "";
 
 	position: absolute;
-	left: -13px;
-	top: -6px;
-	right: -13px;
+	left: -5%;
+	top: -2%;
+	bottom: -4%;
 	
-	height: 410px;
+	width: 110%;
+	height: 106%;
+
+	padding-bottom: 60px;
 
 	background-color: rgba(255,255,255,0.2);
 	box-shadow: 0 20px 20px 0 rgba(0,0,0,0.1);
 	border-radius: 10px;
+
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.catalog-item:hover .item-hoverbox {
+	display: flex;
 }
 
 .catalog-item h3{
@@ -608,9 +630,6 @@ li.cart-not-empty:hover .button-cart {
 	padding: 0 10px;
 	margin: 0;
 	position: relative;
-
-	max-height: 45px;
-	overflow: hidden;
 
 	order: 1;
 }
@@ -647,25 +666,13 @@ li.cart-not-empty:hover .button-cart {
 	content: "₽";
 }
 
-.button-quicklook {
-	display: none;
-	position: absolute;
-	bottom: -80px;
+.catalog-item-button {
+	position: relative;
+	top: 45px;
 
-	margin: 20px 30px;
+	margin: 0 15px;
 }
 
-.catalog-item:hover{
-	z-index: 100;
-}
-
-.catalog-item:hover::before {
-	display: block;
-}
-
-.catalog-item:hover > .button-quicklook {
-	display: inline-block;
-}
 
 
 .bestseller-item{
@@ -687,7 +694,7 @@ li.cart-not-empty:hover .button-cart {
 .features {
 	color: #000000;
 
-	background: url(../img/bg-features.jpg) repeat;	
+	background: url(../img/bg-features.jpg) repeat #eee4cd;	
 
 	border-radius: 15px 20px;
 	box-sizing: border-box;
@@ -753,7 +760,7 @@ li.cart-not-empty:hover .button-cart {
 
 	border-radius: 15px;
 	width: 560px;
-	height: 220px;	
+	min-height: 220px;	
 
 	padding: 21px 20px;
 	box-sizing: border-box;
@@ -793,7 +800,7 @@ li.cart-not-empty:hover .button-cart {
 	box-sizing: border-box;
 	
 	width: 560px;
-	height: 220px;	
+	min-height: 220px;	
 
 	padding: 31px 26px;
 }

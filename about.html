@@ -13,29 +13,30 @@
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
-					<img src="img/logo.svg" width="154" height="64">
+					<img src="img/logo.svg" width="154" height="64" alt="Gllacy - Магазин мороженого">
 				</a>
 				<ul class="site-navigation">
-						<li>
-							<a href="catalog.html">Каталог</a>
-							<ul class="site-subnav">
-								<li class="new"><a href="#">Новинки</a></li>
-								<li><a href="#">Сливочное</a></li>
-								<li><a href="#">Щербеты</a></li>
-								<li><a href="#">Фруктовый лёд</a></li>
-								<li><a href="#">Мелорин</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Доставка и оплата</a></li>
-						<li class="active"><a>О Компании</a></li>
-					</ul>
+					<li>
+						<a href="#">Каталог</a>
+						<ul class="site-subnav">
+							<li class="new"><a href="#">Новинки</a></li>
+							<li><a href="catalog.html">Сливочное</a></li>
+							<li><a href="#">Щербеты</a></li>
+							<li><a href="#">Фруктовый лёд</a></li>
+							<li><a href="#">Мелорин</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li class="active"><a>О Компании</a></li>
+				</ul>
+				
 				<ul class="user-navigation">
 					<li class="user-navigation-item item-search">
 						<button class="user-nav-button button-search">Поиск по сайту</button>
-						<form class="site-search-form" class="site-search" method="get" action="https://echo.htmlacademy.ru">
+						<form class="site-search-form" method="get" action="https://echo.htmlacademy.ru">
 							<h3 class="visually-hidden">Поиск по сайту</h3>
 							<label for="site-search-text">
-								<input type="text" id="site-search-text" placeholder="Что ищем?">
+								<input type="text" name="site-search-text" id="site-search-text" placeholder="Что ищем?">
 							</label>
 							<button type="submit" class="button visually-hidden">Искать</button>
 						</form>
@@ -52,19 +53,46 @@
 					          <label class="visually-hidden" for="user-password">Пароль</label>
 					          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
 					        </p>
-					        <p class="login-password-info">
-					          <a class="newmember" href="#">Забыли пароль?</a>
-					          <a class="restore" href="#">Новая регистрация</a>
-					        </p>
-					        <button class="button" type="submit">Войти</button>
+					        <div class="login-password-info">
+					        	<p>
+					          		<a class="newmember" href="#">Забыли пароль?</a>
+					          		<a class="restore" href="#">Новая регистрация</a>
+					        	</p>
+					        	<button class="button" type="submit">Войти</button>
+					    	</div>
 					    </form>	
 
 					</li>
 					<li class="user-navigation-item item-cart cart-not-empty">
 						<a class="user-nav-button button-cart" href="#">2 товара</a>
-					</li>
+					
+						<div class="smallcart-box">
+							<table class="smallcart-table">
+								<tr>
+									<td class="cart-delete"><button class="btn-delete-item">Удалить</button></td>										
+									<td class="cart-pic"><img src="img/content-icecream3.jpg" width="35" height="35" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
+									<td class="cart-desc">Сливочное с апельсиновым джемом и цитрусовой стружкой</td>
+									<td class="cart-calc">1,5 кг х <span class="price">200 руб.</span></td>
+									<td class="cart-item-price">300<span> руб.</span></td>
+								</tr>
+								<tr>
+									<td class="cart-delete"><button class="btn-delete-item">Удалить</button></td>										
+									<td class="cart-pic"><img src="img/content-icecream5.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+									<td class="cart-desc">Клубничный пломбир с присыпкой из белого шоколада</td>
+									<td class="cart-calc">1,5 кг х <span class="price">300 руб.</span></td>
+									<td class="cart-item-price">450<span> руб.</span></td>
+								</tr>
+							</table>
+							<div class="smallcart-summary">
+								<p>Итого: <span>750 руб.</span></p>
+								<p>
+									<a href="#" class="button">Оформить заказ</a>
+								</p>
+							</div>
+						</div>
+					</li>				
 				</ul>
-				</ul>
+				
 			</nav>
 			<p class="main-header-timetable">
 				<span class="working-time">С 10 до 20, ежедневно</span>
@@ -158,8 +186,8 @@
 				</nav>
 
 				<p class="footer-copyright">
-					<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="110" height="40"></a>
-					<span calss="copyright-info">Сделано в <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> (с) 2018<span>
+					<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmlacademy.svg" width="110" height="40" alt="HTML Academy"></a>
+					<span class="copyright-info">Сделано в <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> (с) 2018</span>
 				</p>
 		    </footer>  
 
