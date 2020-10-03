@@ -110,7 +110,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: top center;
   
-  transition: all 2s ease;
+  transition: background-color 2s ease;
 }
 
 .site-wrapper::before,
