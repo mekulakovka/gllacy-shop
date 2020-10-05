@@ -1,10 +1,5 @@
 # Личный проект «Глейси»
 
-* Студент: [Юлия Турская](https://htmlacademy.ru/profile/id647355).
-* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/id25083).
-
----
-
 ## Вёрстка страниц:
 - <a href="https://mekulakovka.github.io/htmlccs1_gllacy/index.html">Главная</a> 
 - <a href="https://mekulakovka.github.io/htmlccs1_gllacy/catalog.html">Каталог</a> (Главная -> Каталог -> Сливочное)
